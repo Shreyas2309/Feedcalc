@@ -6,22 +6,49 @@
 
 body{
     font-family: Arial, sans-serif;
-    
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 
 .nav-contents{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     color: black;
     height: 60px;
     /* position: fixed */
 }
 
+.list-contents{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.list-contents li {
+    margin: 20px 20px;
+}
+
+.list-contents li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
 .header{
     border-bottom: 3px solid black;
-    background-color: white;
+    width: 100%;
+    height: 66px;
+}
+
+.btn1{
+    background-color: rgb(141, 18, 255);
+    color : white;
+    border-radius: 15px;
+    font-size: 15px;
+    height: 45px;
+    width: 100px;
+    margin: 5px 10px;
 }
 
 /* .navbar{
@@ -29,14 +56,18 @@ body{
     top: 0;
     width: 100%;
 } */
+main{
+    width: 100%;
+}
 
 .hero{
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    height: 500px;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    /* margin-top: 30px; */
     background-color: #74e3fc;
+    width: 100%;
 }
 
 .hero-heading{
@@ -69,15 +100,16 @@ body{
 
 .email1 {
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    /* color: black; */
+    background: transparent;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
     border-radius: 2px solid black;
     font-size: 1.2rem;
     margin-left: 50px;
     margin-top: 20px;
     padding: 0.8rem 2rem;
-    border-radius: 0.2rem;
-    background-color: rgb(255, 255, 255);
-    width: 40%;
+    border-radius: 0.2rem;  
+    width: 400px;
     display: block;
     transition: all 0.3s;
   }
@@ -94,13 +126,15 @@ body{
     align-items: center;
   }
 
-  .btn1{
+  .btn3{
     margin-top: 20px;
     margin-left: 20px;
-    width: 80px;
+    width: 150px;
     height: 50px;
-    background-color: blue;
+    background-color: rgb(141, 18, 255);
     color : white;
+    border-radius: 15px;
+    font-size: 20px;
   }
 
     .btn1:hover{
@@ -112,14 +146,18 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    margin-top: 30px;
+    height: 600px;
+    /* margin-top: 30px; */
     background-color: #9feafb;
 }
 
 .hero_2 p{
     font-size: 30px;
     color: #333;
+}
+
+.hero_2 img{
+    width: 100%;
 }
 
 .fastcompany{
@@ -135,17 +173,18 @@ body{
 }
 
 .meme_div{
+    display: flex;
     justify-content: space-between;
 }
 
 .hero_3{
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    height: 400px;
-    margin-top: 30px;
     background-color: rgb(39, 39, 39);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .hero_3-left{
@@ -176,7 +215,7 @@ body{
 }
 
 .hero_3-right img{
-    width: 50px;
+    width: 40px;
 }
 
 .clock-div{
@@ -192,13 +231,284 @@ body{
 }
 
 .hero_4{
-    height: 800px;
-    background-color: blue;
+    width: 100%;
+    /* height: 650px; */
+    background-color: pink;
 }
 
-.hero_4 p{
+
+
+.corousel-para{
+    font-size: 40px;
+    color: #333;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    margin-top: 3vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card img{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-name{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-role{
+    text-align: center;
+    font-style: italic;
+}
+
+.card-para{
+    font-size: small;
+    font-weight: lighter;
+    text-align: center; 
+}
+
+.hero_5{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(253, 209, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_5-para{
+    text-align: center;  
+    font-size: 40px;
+    color: #333;
+    font-weight: 800;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+/* .hero_5-heading{
+    margin-top: 100px;
+} */
+
+
+.hero_5-box{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero_5-no{
     font-size: 30px;
+    color: #333;
+    font-weight: 800;
+    margin: 20px;
+}
+
+.hero_5-box-para{
+    font-size: 20px;
+    color: #333;
+}
+
+.hero_5-box-container{
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+}
+
+
+.hero_6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    background-color: rgb(255, 200, 250);
+    font-family: sans-serif;
+}
+
+.hero_6 p{
+    font-size: 40px;
+    color: #333;
+    font-weight: 800;
+    padding-top: 100px;
+    margin: 0px 300px;
+    margin-bottom: 30px;
+}
+
+.hero_6-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
     color: white;
-    margin-left: 20px;
-    margin-top: 20px;
+    height: 500px;
+}
+
+.footer-left{
+    width: 50%;
+    margin-left: 50px;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-right: 50px;
+}
+
+.footer-right-1 p{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.footer-right-1 ul li{
+    list-style-type: none;
+    padding: 2px;
+}
+
+
+@media (max-width: 768px){
+    /* header */
+    .list-contents{
+        display: none;
+    }
+
+    /* hero_2 */
+    .meme_div{
+        display: flex;
+    }
+
+    .meme, .fastcompany{
+        padding: 30px;
+    }
+
+    /* hero_3 */
+    hero_3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_3-left{
+        width: auto;
+    }
+    .hero_3-right{
+        width: auto;
+    }
+
+    /* hero_4 */
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 60vw;
+    }
+
+    /* hero_5 */
+
+    .hero_5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+
+    .hero_5-box-container{
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    /* hero_6 */
+
+    .hero_6 p{
+        font-size: 30px;
+        margin: 0px 50px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 426px){
+    .email1{
+        width: 260px;
+    }
+
+    .form1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-right{display: none;}
+
+    .hero-heading{
+        font-size: 40px;
+    }
+
+    .meme_div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fastcompany{
+        margin: 0px;
+    }
+
+    .meme{
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero_6-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #email1{
+        margin: 0;
+        /* padding: 0; */
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }

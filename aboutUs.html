@@ -31,12 +31,12 @@
             <img src="./img/logo.png" alt="Logo" />
           </div>
           <div class="list-contents">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Features">Features</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <input class="btn1" type="button" value="Download" />
-            <input class="btn1" type="button" value="View Demo" />
+            <li><a href="/feedcalc">Home</a></li>
+            <li><a href="/feedcalc/aboutUs.html">About</a></li>
+            <li><a href="/feedcalc/features.html">Features</a></li>
+            <li><a href="/feedcalc/contactUs.html">Contact</a></li>
+            <input class="btn1" type="button" value="Download" onclick="download()"/>
+            <input class="btn1" type="button" value="View Demo" onclick="demo()"/>
           </div>
         </ul>
       </nav>
@@ -226,6 +226,8 @@ word format.
         </div>
       </div>
     </footer>
+
+    <script src="./js/index.js"></script>
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");

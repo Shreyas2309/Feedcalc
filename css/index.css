@@ -71,11 +71,11 @@ main{
 }
 
 .hero-heading{
-    font-size: 70px;
+    font-size: 4rem;
     color: #333;
     align-items: left;
     margin-left: 50px;
-    width: 50%;
+    /* width: 50%; */
     padding-top: 50px;
 }
 
@@ -88,14 +88,21 @@ main{
     padding-top: 30px;
 }
 
+.hero-left {
+    width: 50%;
+}
+
 .hero-right {
     width: 50%;
     height: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-right img{
     width: 100%;
-    height: 100%;
+    height: 150%;
+    /* object-fit: fill; */
 }
 
 .email1 {
@@ -143,6 +150,7 @@ main{
 
 .hero_2{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -166,16 +174,22 @@ main{
 
 .row1 img{
     margin: 20px;
+    height: 100%;
+    width: 100%;
 }
 
 .row2{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 10rem;
+    object-fit: contain;
 }
 
 .row2 img{
     margin: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .hero_3{
@@ -292,13 +306,14 @@ main{
 }
 
 .hero_5{
-    height: 70vh;
+    /* height: 40vh; */
     width: 100%;
     background-color: rgb(253, 209, 216);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 70px 0;
 }
 
 .hero_5-para{
@@ -465,6 +480,7 @@ main{
         margin: 0px 50px;
         margin-bottom: 20px;
     }
+    
 
 }
 
@@ -519,17 +535,24 @@ main{
 
 @media (max-width: 1024px) {
     .row1{
-        height: 10rem;
+        height: 150px;
     }
+
+    .row2{
+        height: 130px;
+    }
+
+
 }
 
 @media (max-width: 768px) {
-        .row1{
-            height: 8rem;
-        }
-        .row2{
-            height: 8rem;
-        }
+    .row1{
+        height: 100px;
+    }
+
+    .row2{
+        height: 100px;
+    }
 }
 
 @media (max-width: 426px) {
